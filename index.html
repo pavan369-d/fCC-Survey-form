@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <label id="name-label" for="name"
+          >Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+            required
+          />
+        </label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+        /></label>
+        <label id="number-label" for="age"
+          >Age
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="100"
+            name="age"
+            placeholder="age"
+        /></label>
+        <fieldset>
+          <legend>Which option best describes your current role?</legend>
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>learner</option>
+            <option>Fulltime Learner</option>
+            <option>prefer not to say</option>
+            <option>others</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Would you prefer to refer to your friends?</legend>
+          <label
+            ><input type="radio" name="visit" value="definitely" />
+            Definitely</label
+          >
+          <label><input type="radio" name="visit" value="maybe" /> Maybe</label>
+          <label
+            ><input type="radio" name="visit" value="not-sure" /> Not
+            sure</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>What is your favorite feature of freeCodeCamp?</legend>
+          <select>
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Project</option>
+            <option>Community</option>
+            <option>Open source</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>
+            What would you like to see improved? (Check all that apply)
+          </legend>
+          <label
+            ><input type="checkbox" value="check" /> Front-end Projects</label
+          >
+          <label
+            ><input type="checkbox" value="check" /> Back-end Projects</label
+          >
+          <label
+            ><input type="checkbox" value="check" /> Data Visualization</label
+          >
+          <label><input type="checkbox" value="check" /> Challenges</label>
+          <label
+            ><input type="checkbox" value="check" /> Open Source
+            Community</label
+          >
+          <label
+            ><input type="checkbox" value="check" />Gitter help rooms</label
+          >
+          <label><input type="checkbox" value="check" /> Videos</label>
+          <label><input type="checkbox" value="check" /> City Meetups</label>
+          <label><input type="checkbox" value="check" /> Wiki</label>
+          <label><input type="checkbox" value="check" /> Forum</label>
+          <label
+            ><input type="checkbox" value="check" /> Additional Courses</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Any comments or suggestions?</legend>
+          <textarea placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <label><input type="submit" id="submit" /></label>
+      </form>
+    </main>
+  </body>
+</html>
